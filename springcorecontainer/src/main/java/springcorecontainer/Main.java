@@ -13,6 +13,9 @@ public class Main {
         // System.out.println(ap.getClass().getName());
 
         User user = ap.getBean("user",User.class);
+        // user.setName("Ram Kumar");
+        // user.setEmail("rammaniyari@gmail.com");
+        // user.setPass("123654789");
         user.showUser();
 
     }

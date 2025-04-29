@@ -5,6 +5,9 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
  
    <bean class="springcorecontainer.beans.User" id="user">
+        <property name ="name" value="Ram Kumar Singh" />
+        <property name ="email" value="abc@gmail.com" />
+        <property name ="pass" value="1230000" />
    
    </bean>
  
