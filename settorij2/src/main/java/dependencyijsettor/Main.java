@@ -1,9 +1,10 @@
-package spring;
+package dependencyijsettor;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import spring.beans.User;
+import dependencyijsettor.beans.Employee;
+import dependencyijsettor.beans.Student;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,10 +14,10 @@ public class Main {
         ap = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println(ap);
 
-        User user = (User) ap.getBean("user");
-        System.out.println(user.getName());
-        System.out.println(user.getEmail());
-        System.out.println(user.getPass());
-        System.out.println(user.getRollNo());
+        Student student = (Student) ap.getBean("student");
+        student.startMyCourse();
+
+        Employee employee = (Employee) ap.getBean("emp");
+        System.out.println(employee.toString());
     }
 }

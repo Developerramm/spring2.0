@@ -8,6 +8,7 @@
         <property name="name" value="Ram Kumar" />
         <property name="email" value="abc@gmail.com" />
         <property name="pass" value="123" />
+        <property name="rollNo" value="1001" />
     </bean>
 
 </beans>
