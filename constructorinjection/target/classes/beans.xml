@@ -4,6 +4,14 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    
+   <bean class="constructorinjection.beans.Student" id="student">
+        <constructor-arg name="name" value="Ram Kumar" />
+        <constructor-arg name="email" value="abc@gmail.com" />
+        <constructor-arg name="course" ref="course" />
+   </bean>
+
+   <bean class="constructorinjection.beans.Course" id="course">
+        <property name="name" value="Java FullStack course" />
+   </bean>
 
 </beans>
