@@ -6,4 +6,10 @@
 
     <!-- bean definitions here -->
 
+    <bean class="pattern.beans.Delhivery" id="delhivery"></bean>
+
+    <bean class="pattern.beans.Amazon" id="amazon">
+        <constructor-arg ref="delhivery" />
+    </bean>
+
 </beans>
