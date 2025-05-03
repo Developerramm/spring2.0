@@ -1,15 +1,25 @@
 package pattern.beans;
 
 // dependent spring bean
-public class Bluedart {
+public final class Bluedart implements LogisticsService {
 
-    public String trackOrderStatsu(int order){
-        return "Order id " + order + " is reached to nearest hub";
+    @Override
+    public String checkDeliveryStatus(String orderId) {
+        String status = "Your order id " + orderId + " is reached to the nearest hub. it will be deliver today by Bluedart delivery agent.";
+        return status;
     }
 
-    public void returnOrderRequest(int orderId){
-        System.out.println("Your order having order id " + orderId
-                + " return request is accepted. Our Bluedart agent will pick up your order soon.");
+    @Override
+    public String orderReturnRequest(String orderId) {
+        String returnRequestStatus = "Your order id " + orderId + " A return request is accepted. Bluedart delivery agent will pick up your item soon.";
+       return returnRequestStatus;
     }
+
+    @Override
+    public String orderReplaceRequest(String orderId) {
+        String replaceStatus = "Your order id " + orderId + " A replace request is accepted. Bluedart delivery agent will pick up your item soon. please keep your item with invoice ready";
+        return replaceStatus;
+    }
+
 
 }

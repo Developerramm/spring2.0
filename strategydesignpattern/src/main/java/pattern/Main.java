@@ -15,8 +15,8 @@ public class Main {
 
         Amazon amazon = (Amazon) ap.getBean("amazon");
 
-        String status = amazon.checkDeliveryStatus(12365);
+        String status = amazon.checkDeliveryStatus("123665");
         System.out.println(status);
-        
+
     }
 }

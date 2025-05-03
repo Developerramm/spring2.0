@@ -1,20 +1,24 @@
 package pattern.beans;
 
 // target spring bean class
-public class Amazon {
+public final class Amazon {
 
-    private Delhivery delhivery;
+    private LogisticsService logisticsService;
 
-    public Amazon(Delhivery delhivery) {
-        this.delhivery = delhivery;
+    public Amazon(LogisticsService logisticsService) {
+        this.logisticsService = logisticsService;
     }
 
-    public String checkDeliveryStatus(int orderId) {
-        return delhivery.trackDeliveryStatus(orderId);
+    public String checkDeliveryStatus(String orderId) {
+        return logisticsService.checkDeliveryStatus(orderId);
     }
 
-    public void returnOrder(int orderId) {
-        delhivery.orderReturnRequest(orderId);
+    public String returnOrder(String orderId) {
+        return logisticsService.orderReturnRequest(orderId);
+    }
+
+    public String replaceOder(String orderId) {
+        return logisticsService.orderReplaceRequest(orderId);
     }
 
 }

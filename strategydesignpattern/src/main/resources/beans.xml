@@ -7,6 +7,8 @@
     <!-- bean definitions here -->
 
     <bean class="pattern.beans.Delhivery" id="delhivery"></bean>
+    <bean class="pattern.beans.Bluedart" id="bluedart"></bean>
+    <bean class="pattern.beans.EcomExpress" id="ecomexpress"></bean>
 
     <bean class="pattern.beans.Amazon" id="amazon">
         <constructor-arg ref="delhivery" />
