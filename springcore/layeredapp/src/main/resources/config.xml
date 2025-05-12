@@ -6,4 +6,23 @@
 
     <!-- bean definitions here -->
 
+    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="ds">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/layeredapp" />
+        <property name="username" value="root" />
+        <property name="password" value="ramkumar" />
+    </bean>
+
+    <bean class="springcore.dao.StudentDaoImpl" id="studentDao">
+        <constructor-arg name="dataSource" ref="ds" />
+    </bean>
+
+    <bean class="springcore.service.StudentServiceImpl" id="studetnService">
+        <constructor-arg name="studentDao" ref="studentDao" />
+    </bean>
+
+    <bean class="springcore.controller.StudentMainController" id="mainController">
+        <constructor-arg name="studentService" ref="studetnService" />
+    </bean>
+
 </beans>
