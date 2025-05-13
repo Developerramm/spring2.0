@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="springcore.beans.Employee" id="emp">
+        <property name="employeeDesignation">
+            <props>
+                <prop key="Ram"> SDE 1</prop>
+                <prop key="mohan"> React developer</prop>
+                <prop key="pooja"> Tester</prop>
+                <prop key="mohit"> backend developer</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>
