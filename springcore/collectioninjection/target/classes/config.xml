@@ -52,6 +52,24 @@
         </property>
     </bean>
 
+    <bean class="springcore.bean.User" id="user" >
+        <property name="phoneNumber">
+            <set value-type="java.lang.Long">
+                <value>123654</value>
+                <value>52413</value>
+                <value>984563</value>
+                <value>9545</value>
+            </set>
+        </property>
+
+        <property name="emailId">
+            <set>
+                <value>a@gmail.com</value>
+                <value>b@gmail.com</value>
+            </set>
+        </property>
+    </bean>
+
     
 
 </beans>

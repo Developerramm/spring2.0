@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import springcore.bean.Faculty;
 import springcore.bean.Student;
+import springcore.bean.User;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +22,10 @@ public class Main {
         Faculty faculty = null;
         faculty = ap.getBean("faculty",Faculty.class);
         System.out.println(faculty.toString());
+
+        User user = null;
+        user = ap.getBean("user",User.class);
+        System.out.println(user.toString());
 
         System.out.println(ap);
     }
