@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean class="springcore.bean.Student" id="student">
+        <property name="name" value="Ram Kumar" />
+        <property name="marks">
+            <array>
+                <value>100</value>
+                <value>95</value>
+                <value>40</value>
+                <value>60</value>
+                <value>80</value>
+                <value>96</value>
+            </array>
+        </property >
+    </bean>
+
+</beans>

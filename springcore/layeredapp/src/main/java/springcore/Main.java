@@ -16,11 +16,11 @@ public class Main {
 
         StudentVo vo = new StudentVo();
 
-        vo.setId("1002");
-        vo.setName("Mohit Kumar");
-        vo.setEmail("mohit@gmai.com");
+        vo.setId("1003");
+        vo.setName("Kapal Kumar");
+        vo.setEmail("kapal@gmai.com");
         vo.setCourseName("Java core");
-        vo.setObtMarks("300");
+        vo.setObtMarks("150");
 
         try {
             controller.registerStudetnRequest(vo);
