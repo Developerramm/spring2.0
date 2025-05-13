@@ -70,6 +70,26 @@
         </property>
     </bean>
 
-    
+    <bean class="springcore.bean.Collegeinfo" id="info" >
+        <property name="hod">
+            <map>
+               <entry>
+                 <key>
+                    <value>Physics Department</value>
+                </key>
+                <value>RK Raman</value>
+               </entry>
+               <entry key="BscIT" value="Ram Kumar" />
+            </map>
+        </property>
+
+        <property name="holidays">
+            <map>
+                <entry key="holi" value-ref="d1" />
+                <entry key="dewali" value-ref="d2" />
+            </map>
+        </property>
+    </bean>
+
 
 </beans>
