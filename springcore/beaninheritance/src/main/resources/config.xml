@@ -6,5 +6,13 @@
 
     <!-- bean definitions here -->
 
+    <bean class="springcore.beans.Car" id="car">
+        <property name="model" value="creta 2025" />
+        <property name="regNo" value="xh-2343" />
+        <property name="tyre" value="mrf" />
+        <property name="enginePower" value="2300" />
+        <property name="fuelType" value="Petrol" />
+        <property name="company" value="hyundai" />
+    </bean>
     
 </beans>
