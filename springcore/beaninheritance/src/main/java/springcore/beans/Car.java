@@ -10,6 +10,10 @@ public class Car {
     private String fuelType;
 
     
+    public Car(){
+        System.out.println("Car.Car()");
+    }
+    
     public void setModel(String model) {
         this.model = model;
     }

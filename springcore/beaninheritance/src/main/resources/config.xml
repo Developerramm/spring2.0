@@ -14,5 +14,9 @@
         <property name="fuelType" value="Petrol" />
         <property name="company" value="hyundai" />
     </bean>
+
+    <bean class="springcore.beans.Car" id="car2" parent="car">
+         <property name="regNo" value="br455212" />
+    </bean>
     
 </beans>
