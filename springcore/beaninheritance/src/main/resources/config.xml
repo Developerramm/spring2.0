@@ -6,17 +6,22 @@
 
     <!-- bean definitions here -->
 
-    <bean class="springcore.beans.Car" id="car">
+    <bean class="springcore.beans.Car" id="car" abstract="true">
         <property name="model" value="creta 2025" />
-        <property name="regNo" value="xh-2343" />
-        <property name="tyre" value="mrf" />
         <property name="enginePower" value="2300" />
-        <property name="fuelType" value="Petrol" />
         <property name="company" value="hyundai" />
     </bean>
 
     <bean class="springcore.beans.Car" id="car2" parent="car">
          <property name="regNo" value="br455212" />
+         <property name="tyre" value="mrf" />
+          <property name="fuelType" value="Petrol" />
+    </bean>
+
+    <bean class="springcore.beans.Car" id="car3" parent="car">
+         <property name="regNo" value="br-4342" />
+         <property name="tyre" value="ceat" />
+          <property name="fuelType" value="CNG" />
     </bean>
     
 </beans>

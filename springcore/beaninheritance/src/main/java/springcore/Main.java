@@ -13,10 +13,13 @@ public class Main {
         ap = new ClassPathXmlApplicationContext("config.xml");
 
         Car car = null;
-        car = ap.getBean("car",Car.class);
-        System.out.println(car);
+        // car = ap.getBean("car",Car.class);
+        // System.out.println(car);
 
         car = ap.getBean("car2",Car.class);
+        System.out.println(car);
+
+        car = ap.getBean("car3",Car.class);
         System.out.println(car);
 
         System.out.println(ap);
