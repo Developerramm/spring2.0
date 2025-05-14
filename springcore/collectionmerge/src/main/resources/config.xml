@@ -6,6 +6,23 @@
 
     <!-- bean definitions here -->
 
-    
+    <bean class="springcore.beans.Student" id="student" abstract="true">
+        <property name="subjects">
+            <set>
+                <value>English</value>
+                <value>Maths</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean class="springcore.beans.Student" id="s1" parent="student">
+        <property name="subjects">
+            <set merge="true">
+                <value>Networking</value>
+                <value>OOPL</value>
+                <value>DSA</value>
+            </set>
+        </property>
+    </bean>
 
 </beans>
