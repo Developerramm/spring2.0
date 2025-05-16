@@ -6,6 +6,11 @@
 
     <!-- bean definitions here -->
 
+   <bean class="springcore.beans.Delhivery" id="logisticsService"></bean>
+   <bean class="springcore.beans.Bluedart" id="logisticsService2"></bean>
+
+   <bean class="springcore.beans.Amazon" id="amazon" autowire="byName">
    
+   </bean>
 
 </beans>
