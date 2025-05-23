@@ -10,6 +10,11 @@
         <property name="name" value="Ram Kumar" />
     </bean>
 
+     <bean class="springcore.beans.Faculty" id="faculty" scope="prototype">
+        
+    </bean>
+
+
   
 
 </beans>
