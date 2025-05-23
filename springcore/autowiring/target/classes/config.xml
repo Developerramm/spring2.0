@@ -6,8 +6,9 @@
 
     <!-- bean definitions here -->
 
-   <bean class="springcore.beans.Delhivery" id="lg2"></bean>
-   <!-- <bean class="springcore.beans.Bluedart" id="lg1"></bean> -->
+   <bean class="springcore.beans.Delhivery" id="lg2" autowire-candidate="false"></bean>
+   <bean class="springcore.beans.EcomExpress" id="lg3" primary="true"></bean>
+   <bean class="springcore.beans.Bluedart" id="lg1" ></bean>
 
    <!-- <bean class="springcore.beans.Amazon" id="amazon" autowire="byName"></bean> -->
    <bean class="springcore.beans.Amazon" id="amazon" autowire="byType"></bean>
