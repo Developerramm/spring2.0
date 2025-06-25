@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int sumOfEvenNumber(int number)
+int getSumOfOddNumber(int number)
 {
+
     int sum = 0;
 
-    for (int i = 0; i <= number; i = i + 2)
+    for (int i = 1; i <= number; i = i + 2)
     {
         sum += i;
     }
@@ -20,9 +21,9 @@ int main()
     cout << "Enter a number to get sum " << endl;
     cin >> n;
 
-    int getSumOfEvenNumber = sumOfEvenNumber(n);
+    int sum = getSumOfOddNumber(n);
 
-    cout << getSumOfEvenNumber << endl;
+    cout << sum << endl;
 
     return 0;
 }
