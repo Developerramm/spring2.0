@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.app.beans.Course" id="course">
+        <property name="courseName" value="java full stack"></property>
+    </bean>
+    <bean class="com.app.beans.Course" id="cour">
+        <property name="courseName" value="MongoDb"></property>
+    </bean>
+    <bean class="com.app.beans.Student" id="student">
+        <constructor-arg name="name" value="Ram kumar" />
+        <constructor-arg name="roll" value="10001" />
+        <constructor-arg name="course" ref="course" />
+        <property name="name" value="Mehilal Singh" />
+        <property name="roll" value="1" />
+        <property name="course" ref="cour" />
+    </bean>
+</beans>
