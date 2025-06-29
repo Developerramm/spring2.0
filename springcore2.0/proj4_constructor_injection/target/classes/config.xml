@@ -4,10 +4,13 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
-
     <bean class="com.app.beans.Student" id="student">
         <constructor-arg name="name" value="Ram Kumar Maniyari" />
         <constructor-arg name="email" value="ram@gmail.com" />
+        <constructor-arg name="course" ref="course"  />
     </bean>
     
+    <bean class="com.app.beans.Course" id="course">
+        <property name="name" value="java full stack course"></property>
+    </bean>
 </beans>

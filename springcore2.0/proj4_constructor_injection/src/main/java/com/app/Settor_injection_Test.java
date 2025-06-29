@@ -11,9 +11,9 @@ public class Settor_injection_Test {
         context = new ClassPathXmlApplicationContext("config.xml");
 
         Student student = (Student) context.getBean("student");
-        System.out.println(student.hashCode());
-        System.out.println(student.toString());
+        student.startMyCourse();
         System.out.println(student);
+        System.out.println("----------------------------------------");
         System.out.println(context);
     }
 }
