@@ -17,4 +17,16 @@
     <bean class="com.spring.beans.Course" id="course">
     </bean>
 
+    <bean class="java.util.Date" id="d1">
+        <property name="year"  value="125" />
+        <property name="month"  value="5" />
+        <property name="date"  value="29" />
+    </bean>
+
+    <bean class="com.spring.beans.Employee" id="emp">
+        <property name="empName" value="Rajesh" />
+        <property name="dpt" value="IT" />
+        <property name="empDob" ref="d1"  />
+    </bean>
+
 </beans>
