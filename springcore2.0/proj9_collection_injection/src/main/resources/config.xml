@@ -4,6 +4,16 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
+    <bean class="java.util.Date" id="d1">
+        <property name="year" value="125"></property>
+        <property name="month" value="6"></property>
+        <property name="date" value="6"></property>
+    </bean>
+    <bean class="java.util.Date" id="d2">
+        <property name="year" value="124"></property>
+        <property name="month" value="3"></property>
+        <property name="date" value="7"></property>
+    </bean>
     <bean class="com.app.beans.Student" id="student">
         <property name="name" value="Ram"></property>
         <property name="marks">
@@ -14,6 +24,22 @@
                 <value>83</value>
                 <value>93</value>
             </array>
+        </property>
+    </bean>
+    <bean class="com.app.beans.Faculty" id="faculty">
+        <property name="name">
+            <list>
+                <value>ram kumar</value>
+                <value>Mintu singh</value>
+                <value>Mohan Lala chaturvedi</value>
+                <value>Pooja Singh</value>
+            </list>
+        </property>
+        <property name="joiningDate">
+            <list>
+                <ref bean="d1" />
+                <ref bean="d2" />
+            </list>
         </property>
     </bean>
 </beans>
