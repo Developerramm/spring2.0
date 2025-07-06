@@ -59,4 +59,18 @@
             </set>
         </property>
     </bean>
+    <bean class="com.app.beans.CollegeInfo" id="info">
+        <property name="hod">
+            <map>
+                <entry key="Physics" value="Ram bana"></entry>
+                <entry key="math" value=" Gaguu"></entry>
+            </map>
+        </property>
+        <property name="holiday">
+            <map>
+                <entry key="firsthday" value-ref="d1"></entry>
+                <entry key="secondday" value-ref="d2"></entry>
+            </map>
+        </property>
+    </bean>
 </beans>

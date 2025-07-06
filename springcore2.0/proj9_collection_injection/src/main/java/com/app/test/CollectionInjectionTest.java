@@ -3,6 +3,7 @@ package com.app.test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.app.beans.CollegeInfo;
 import com.app.beans.Faculty;
 import com.app.beans.Student;
 import com.app.beans.User;
@@ -21,6 +22,9 @@ public class CollectionInjectionTest {
 
         User user = (User) context.getBean("user");
         System.out.println(user);
+
+        CollegeInfo collegeInfo = (CollegeInfo) context.getBean("info");
+        System.out.println(collegeInfo);
 
         System.out.println(context);
     }
