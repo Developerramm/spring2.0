@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.app.beans.Student" id="student">
+        <property name="name" value="Ram"></property>
+        <property name="marks">
+            <array>
+                <value>80</value>
+                <value>90</value>
+                <value>100</value>
+                <value>83</value>
+                <value>93</value>
+            </array>
+        </property>
+    </bean>
+</beans>
