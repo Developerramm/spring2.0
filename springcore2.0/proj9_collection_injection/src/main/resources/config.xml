@@ -42,4 +42,21 @@
             </list>
         </property>
     </bean>
+    <bean class="com.app.beans.User" id="user">
+        <property name="phoneNumber">
+            <set value-type="java.lang.Long">
+                <value>1425</value>
+                <value>9543</value>
+                <value>324</value>
+                <value>0147</value>
+            </set>
+        </property>
+        <property name="email">
+            <set>
+                <value>a@gmail.com</value>
+                <value>b@gmail.com</value>
+                <value>c@gmail.com</value>
+            </set>
+        </property>
+    </bean>
 </beans>

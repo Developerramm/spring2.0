@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.app.beans.Faculty;
 import com.app.beans.Student;
+import com.app.beans.User;
 
 public class CollectionInjectionTest {
     public static void main(String[] args) {
@@ -17,6 +18,9 @@ public class CollectionInjectionTest {
 
         Faculty faculty = (Faculty) context.getBean("faculty");
         System.out.println(faculty);
+
+        User user = (User) context.getBean("user");
+        System.out.println(user);
 
         System.out.println(context);
     }
