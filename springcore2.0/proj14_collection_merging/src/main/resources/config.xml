@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="true" xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.app.bean.Student" id="student" abstract="true">
+        <property name="subjects">
+            <set>
+                <value>Engilsh</value>
+                <value>Maths</value>
+            </set>
+        </property>
+    </bean>
+    <bean class="com.app.bean.Student" id="s1" parent="student" >
+        <property name="subjects">
+            <set>
+                <value>OOPL</value>
+                <value>DSA</value>
+                <value>Networking</value>
+            </set>
+        </property>
+    </bean>
+    <bean class="com.app.bean.Student" id="s2" parent="student">
+        <property name="subjects">
+            <set>
+                <value>DSA</value>
+                <value>Python</value>
+                <value>SQL Database</value>
+            </set>
+        </property>
+    </bean>
+</beans>
