@@ -3,12 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
     <!-- bean definitions here -->
-
-    <bean class="com.app.beans.Delhivery" id="logisticesService"></bean>
-    <bean class="com.app.beans.Bluedart"  id="logisticesService2"></bean>
-
-    <bean class="com.app.beans.Amazon" id="amazon" autowire="byName"></bean>
-
+    <bean class="com.app.beans.Delhivery" id="logisticesService" autowire-candidate="false"/>
+    <bean class="com.app.beans.Bluedart"  id="logisticesService2" primary="true"/>
+    <!-- <bean class="com.app.beans.Amazon" id="amazon" autowire="byName"></bean> -->
+    <bean class="com.app.beans.Amazon" id="amazon" autowire="byType"></bean>
 </beans>
