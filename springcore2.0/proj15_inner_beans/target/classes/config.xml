@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.app.beans.Phone" id="phone">
+        <property name="phoneNo" value="000000000" />
+    </bean>
+    <bean class="com.app.beans.User" id="u1">
+        <constructor-arg name="phone">
+            <bean class="com.app.beans.Phone">
+                <property name="phoneNo" value="147853699" />
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean class="com.app.beans.User" id="user">
+        <constructor-arg name="phone" ref="phone"/>
+    </bean>
+</beans>
