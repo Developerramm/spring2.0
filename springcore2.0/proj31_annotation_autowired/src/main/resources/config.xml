@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- bean definitions here -->
     <bean class="com.app.beans.Delhivery" id="delhivery"></bean>
-    <bean class="com.app.beans.BlueDart" id="bluedart" primary="true"></bean>
+    <bean class="com.app.beans.BlueDart" id="bluedart"></bean>
     <bean class="com.app.beans.Amazon" id="amazon"></bean>
     <context:annotation-config />
 </beans>
