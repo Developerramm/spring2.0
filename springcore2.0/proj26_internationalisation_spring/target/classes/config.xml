@@ -6,11 +6,4 @@
 
     <!-- bean definitions here -->
 
-    <bean class="com.spring.beans.User" id="user">
-        <property name="name" value="Ram Kumar" />
-        <property name="email" value="ram@gmail.com" />
-        <property name="pass" value="9000" />
-        <property name="roll" value="1001" />
-    </bean>
-
 </beans>
