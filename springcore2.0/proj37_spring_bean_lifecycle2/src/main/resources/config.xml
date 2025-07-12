@@ -21,6 +21,8 @@ xmlns="http://www.springframework.org/schema/beans"
     <bean class="com.app.beans.Student" id="student" p:name="Mohit" p:dob-ref="d2"  />
     <bean class="com.app.beans.Employee" id="emp" p:name="Ankit" p:joiningDate-ref="d3" />
 
+   <bean class="com.app.beans.AccountHolder" id="ac" p:acHolderName="Sarita"  />
+
 
     <!-- <context:component-scan base-package="com.app" />
     <context:property-placeholder location="application.properties" /> -->
