@@ -22,8 +22,9 @@ xmlns="http://www.springframework.org/schema/beans"
     <bean class="com.app.beans.Employee" id="emp" p:name="Ankit" p:joiningDate-ref="d3" />
 
    <bean class="com.app.beans.AccountHolder" id="ac" p:acHolderName="Sarita"  />
+   <bean class="com.app.beans.CreditCard" id="cd" p:cardNo="142536"  />
 
 
-    <!-- <context:component-scan base-package="com.app" />
-    <context:property-placeholder location="application.properties" /> -->
+    <context:component-scan base-package="com.app" />
+    <!-- <context:property-placeholder location="application.properties" /> -->
 </beans>

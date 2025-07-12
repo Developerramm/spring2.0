@@ -5,6 +5,7 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.app.beans.AccountHolder;
+import com.app.beans.CreditCard;
 import com.app.beans.Employee;
 import com.app.beans.Student;
 import com.app.beans.User;
@@ -23,10 +24,13 @@ public class Main {
 
         AccountHolder accountHolder = context.getBean("ac",AccountHolder.class);
 
+        CreditCard creditCard = context.getBean("cd",CreditCard.class);
+
         System.out.println(user);
         System.out.println(student);
         System.out.println(employee);
         System.out.println(accountHolder);
+        System.out.println(creditCard);
 
         ((AbstractApplicationContext) context).close();
     }
