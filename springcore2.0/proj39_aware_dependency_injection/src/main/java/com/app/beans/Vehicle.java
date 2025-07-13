@@ -1,11 +1,14 @@
 package com.app.beans;
 
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.support.AbstractApplicationContext;
 
-public class Vehicle {
+public class Vehicle implements ApplicationContextAware {
 
     private String dependentBeanId;
+    private ApplicationContext context;
 
     public void musicSystem() {
         System.out.println("music system turn on");
@@ -15,7 +18,7 @@ public class Vehicle {
         System.out.println("horn blown");
     }
 
-    public void journey(ApplicationContext context) {
+    public void journey() {
         // here only engine is required
 
         // ApplicationContext context = null;
@@ -37,6 +40,11 @@ public class Vehicle {
 
     public void setDependentBeanId(String dependentBeanId) {
         this.dependentBeanId = dependentBeanId;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.context = applicationContext;
     }
 
 }

@@ -20,9 +20,9 @@ public class Main {
 
         vehicle.musicSystem();
         vehicle.horn();
-        vehicle.journey(context);
+        vehicle.journey();
 
-        ((AbstractApplicationContext)context).close();
+        ((AbstractApplicationContext) context).close();
 
     }
 }
