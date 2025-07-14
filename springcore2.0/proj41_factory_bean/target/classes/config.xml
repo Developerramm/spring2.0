@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.app.factory.DateFactoryBean" id="datefacbean">
+        <constructor-arg value="125" />
+        <constructor-arg value="6" />
+        <constructor-arg value="14" />
+    </bean>
+
+    <bean class="com.app.beans.AlarmNote" id="alarm">
+        <constructor-arg ref="datefacbean" />
+    </bean>
+</beans>
