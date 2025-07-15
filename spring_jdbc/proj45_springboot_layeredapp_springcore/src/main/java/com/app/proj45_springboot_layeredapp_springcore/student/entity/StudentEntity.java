@@ -1,0 +1,62 @@
+package com.app.proj45_springboot_layeredapp_springcore.student.entity;
+
+import java.io.Serializable;
+
+public class StudentEntity implements Serializable {
+
+    private Integer id;
+    private String name;
+    private String email;
+    private String courseName;
+    private Integer obtainedMarks;
+    private String grade;
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public Integer getObtainedMarks() {
+        return obtainedMarks;
+    }
+
+    public void setObtainedMarks(Integer obtainedMarks) {
+        this.obtainedMarks = obtainedMarks;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+}
